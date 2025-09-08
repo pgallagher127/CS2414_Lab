@@ -1,0 +1,17 @@
+Rectangle object created
+Number of Shape's objects created: 1
+Triangle object created
+Number of Shape's objects created: 2
+Circle object created
+Number of Shape's objects created: 3
+Rectangle area: 100
+Triangle area: 42
+Circle area: 283.528
+Rectangle perimeter: 50
+Triangle perimeter: 32.8924
+Circle perimeter: 59.6902
+Total number of Shape's objects created: 3
+Rectangle object deleted
+Triangle object deleted
+Circle object deleted
+Total number of Shape's objects left after deletion: 0
