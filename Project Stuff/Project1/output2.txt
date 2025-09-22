@@ -1,0 +1,7 @@
+Rules learned from Compression:
+13 10 128
+32 119 129
+Compressed sequence:
+72 101 108 108 111 129 111 114 108 100 33 128
+Decompressed Text:
+Hello world!
