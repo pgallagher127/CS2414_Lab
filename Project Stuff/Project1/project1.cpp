@@ -178,8 +178,8 @@ void Text2Compress::decode() {
                 temp_seq[j+1] = rule2[i];
                 if (j != temp_length-1) {
                     j++;
-                    special_case = true;
                 }
+                else{special_case = true;}
                 new_length++;
             }
             else{

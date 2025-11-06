@@ -1,0 +1,46 @@
+Inserted value 10 at (0, 0) for timeframe 0
+Inserted value 12 at (0, 0) for timeframe 2
+Inserted value 14 at (0, 0) for timeframe 4
+Inserted value 20 at (1, 1) for timeframe 1
+Inserted value 25 at (1, 1) for timeframe 3
+Inserted value 30 at (2, 2) for timeframe 2
+Inserted value 35 at (3, 3) for timeframe 5
+Inserted value 40 at (4, 4) for timeframe 0
+Inserted value 42 at (4, 4) for timeframe 6
+Inserted value 50 at (5, 6) for timeframe 4
+Inserted value 55 at (6, 7) for timeframe 7
+Inserted value 60 at (7, 7) for timeframe 1
+Found value at (0, 0) for timeframe 1: 10
+Found value at (1, 1) for timeframe 2: 20
+Found value at (4, 4) for timeframe 3: 40
+Found value at (5, 6) for timeframe 5: 50
+Removed value at (0, 0) for timeframe 2
+Removed value at (1, 1) for timeframe 3
+Removed value at (5, 6) for timeframe 4
+Found value at (0, 0) for timeframe 4: 14
+Found value at (1, 1) for timeframe 5: 20
+Found value at (7, 7) for timeframe 1: 60
+Inserted value 18 at (2, 3) for timeframe 2
+Inserted value 22 at (2, 3) for timeframe 6
+Inserted value 28 at (3, 4) for timeframe 7
+Current number of non-zero entries: 9
+Temporal Sparse Matrix:
+Row: 0, Col: 0 -> (10, 0) (14, 4)
+Row: 1, Col: 1 -> (20, 1) 
+Row: 2, Col: 2 -> (30, 2)
+Row: 3, Col: 3 -> (35, 5)
+Row: 4, Col: 4 -> (40, 0) (42, 6)
+Row: 6, Col: 7 -> (55, 7)
+Row: 7, Col: 7 -> (60, 1)
+Row: 2, Col: 3 -> (18, 2) (22, 6)
+Row: 3, Col: 4 -> (28, 7) 
+Removed value at (2, 2) for timeframe 2
+Temporal Sparse Matrix:
+Row: 0, Col: 0 -> (10, 0) (14, 4)
+Row: 1, Col: 1 -> (20, 1)
+Row: 3, Col: 3 -> (35, 5)
+Row: 4, Col: 4 -> (40, 0) (42, 6)
+Row: 6, Col: 7 -> (55, 7) 
+Row: 7, Col: 7 -> (60, 1)
+Row: 2, Col: 3 -> (18, 2) (22, 6)
+Row: 3, Col: 4 -> (28, 7)

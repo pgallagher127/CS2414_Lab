@@ -34,8 +34,6 @@ int Solution::romanToInt(string s) {
         else {
             total += translateRomantoNum(s[i]);
         }
-        
-
     }
     return total;
 }

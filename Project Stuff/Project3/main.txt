@@ -1,0 +1,55 @@
+int main() { 
+ 
+    int numDimensions;   // number of value dimensions 
+    cin >> numDimensions; 
+ 
+    // Create the root tree (dimension 0) 
+    NestedBST<int>* root = new NestedBST<int>(); 
+    root->dimension = 0; 
+ 
+    int numCommands; 
+    cin >> numCommands; 
+ 
+    char command; 
+    for (int i = 0; i < numCommands; i++) { 
+        cin >> command; 
+        switch (command) { 
+            case 'I': { // Insert 
+                int key; 
+                cin >> key; 
+                vector<int> values(numDimensions); 
+                for (int d = 0; d < numDimensions; d++) { 
+                    cin >> values[d]; 
+                } 
+                root->insert(key, values);
+                break; 
+            } 
+ 
+            case 'F': {
+                vector<int> pattern(numDimensions);
+                string token;
+                for (int d = 0; d < numDimensions; d++) {
+                    cin >> token;
+                    if (token == "*") pattern[d] = -999999;
+                    else pattern[d] = stoi(token);
+                }
+                root->find(pattern);
+                break;
+            } 
+ 
+            case 'D': { // Display 
+                cout << "NestedBST Structure:" << endl; 
+                root->display(); 
+                cout << endl;
+                break; 
+            } 
+ 
+            default: 
+                cout << "Unknown command: " << command << endl; 
+                break; 
+        } 
+    } 
+    // Clean up 
+    delete root; 
+    return 0; 
+}

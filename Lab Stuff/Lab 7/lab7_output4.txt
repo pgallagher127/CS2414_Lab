@@ -1,0 +1,2 @@
+Height of tree: 4
+d / a e f b * ^ c + - 
